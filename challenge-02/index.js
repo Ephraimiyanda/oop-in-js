@@ -8,6 +8,7 @@ movie = class Movie{
     }
 }
 function getOverview(){
-    console.log(`${movie},"a" ${Genre}"film directed by" ${Director} "was released in "${ReleaseYear} ".it recieved a rating of" ${Rating}`)
+    console.log(`${title},"a" ${Genre}"film directed by" ${Director} "was released in "${ReleaseYear} ".it recieved a rating of" ${Rating}`)
 }
-let firstmovie = new Movie("spida","james","")
+let firstmovie = new Movie("spida","james","comedy","2002","5")
+console.log(firstmovie.getOverview())

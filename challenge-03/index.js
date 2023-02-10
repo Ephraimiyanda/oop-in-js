@@ -1,14 +1,15 @@
 const dishes =[
     {
         name:"eggplant parmesan",
-        vegetarian:"true",
+        vegetarian:true,
     },
     {
         name:"spagetti & meatballs",
-        vegetarian:"true"
+        vegetarian:true
     }
 ]
-function vegetarian(){
-    const dish = dishes.filter((dishes=> dishes.vegetarian))
-    return`<li>${dish}</li>`
+function vegetarian(menu){
+    const dish = dishes.filter((dishes)=> dishes.vegetarian===true)
+    return document.querySelectorAll("li").innerHTML = dish;
+
 }

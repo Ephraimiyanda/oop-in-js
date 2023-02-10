@@ -2,16 +2,18 @@ const second = document.querySelector('#seconds');
 const minute = document.querySelector("#minutes");
 const hour = document.querySelector("#hour");
 function setseconds(){
-   const now = new Date();
+   return setInterval(()=>{ const now = new Date();
    const seconds = now.getSeconds();
  
 document.querySelector("#seconds").innerHTML = seconds;
 const mins = now.getMinutes();
-document.querySelector("#seconds").innerHTML = mins;
+document.querySelector("#minutes").innerHTML = mins;
 
 const hours = now.getHours();
 
-document.querySelector("#seconds").innerHTML = hours;
+document.querySelector("#hour").innerHTML = hours;
 
+},1000)
 }
-setInterval(setseconds(), 1000);
+setseconds()
+;

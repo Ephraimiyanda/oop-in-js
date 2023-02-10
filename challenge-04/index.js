@@ -19,7 +19,7 @@ if(NumberOfCopies<10){
 }
 }
 class TechnicalBook extends Book{
-    constructor(,){
+    constructor(){
         super(Title,Author,ISBN,NumberOfCopies,availability,CopiesSold,Restock)
         this.edition=edition
     }
